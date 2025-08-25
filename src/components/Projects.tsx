@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
               </div> */}
               <div className="mb-4">
                 <img
-                  src={`/img/${index === 0 ? 'beautyshop.jpeg' : index === 1 ? 'computer.jpg' : 'cgpacalculator.jpg'}`}
+                  src={`img/${index === 0 ? 'beautyshop.jpeg' : index === 1 ? 'computer.jpg' : 'cgpacalculator.jpg'}`}
                   alt={project.title}
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />

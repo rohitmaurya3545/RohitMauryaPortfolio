@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="/img/RohitKumarMauryas.pdf" 
+                href="img/RohitKumarMauryas.pdf" 
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-200 font-medium"
               >
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
                 <img 
-                  src="/img/rohit.png"
+                  src="img/rohit.png"
                   alt="Professional Developer" 
                   className="w-72 h-72 rounded-full object-cover border-4 border-white/20"
                 />

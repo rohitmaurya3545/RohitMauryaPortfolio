@@ -78,7 +78,7 @@ const About: React.FC = () => {
 
           <div className="flex justify-center">
             <img 
-              src="/img/laptop.jpg" 
+              src="img/laptop.jpg" 
               alt="Rohit at work" 
               className="w-full max-w-md h-96 object-cover rounded-2xl shadow-2xl"
             />
