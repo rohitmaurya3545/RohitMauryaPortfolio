@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
       ],
       technologies: ['HTML5', 'CSS3', 'JavaScript', '+2 more'],
       icon: <ShoppingBag className="text-blue-400" size={24} />,
-      liveDemo: ' https://rohitmaurya3545.github.io/BeautyShops/',
+      liveDemo: 'https://rohitmaurya3545.github.io/BeautyShops/',
       viewCode: 'https://github.com/rohitmaurya3545/BeautyShop-Website'
     },
     {
