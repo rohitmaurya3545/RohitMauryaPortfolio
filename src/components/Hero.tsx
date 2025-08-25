@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="img/RohitKumarMauryas.pdf" 
+                href="img/RohitKumarMauryass.pdf" 
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-200 font-medium"
               >
