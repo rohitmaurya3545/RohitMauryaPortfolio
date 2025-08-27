@@ -17,14 +17,30 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 3000);
-    }, 500);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgvleblk", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        alert("Oops! Something went wrong ❌");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error! Please try again later.");
+    }
   };
 
   return (
@@ -38,6 +54,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Side Info */}
           <div className="space-y-8">
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
@@ -119,6 +136,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
+          {/* Right Side Form */}
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700">
             {isSubmitted ? (
               <div className="text-center py-12">
