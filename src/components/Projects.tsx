@@ -45,38 +45,41 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-blue-900 via-slate-900 to-slate-800">
+    <section
+      id="projects"
+      className="py-14 sm:py-20 bg-gradient-to-br from-blue-900 via-slate-900 to-slate-800"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Showcase of my recent work and notable achievements in software development
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+        >
           {projects.map((project, index) => (
-            <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 flex flex-col">
+            <div
+              key={index}
+              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-5 sm:p-6 border border-slate-700 flex flex-col"
+            >
               <div className="flex items-center gap-3 mb-4">
                 {project.icon}
                 <div>
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-white">
+                    {project.title}
+                  </h3>
                   <div className="text-blue-400 text-sm">{project.category}</div>
                 </div>
               </div>
-              
-              {/* <div className="mb-4">
-                <img 
-                  src={`https://images.pexels.com/photos/${index === 0 ? '3184418' : index === 1 ? '1181675' : '4164418'}/pexels-photo-${index === 0 ? '3184418' : index === 1 ? '1181675' : '4164418'}.jpeg`}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg shadow-lg"
-                />
-              </div> */}
+
               <div className="mb-4">
                 <img
                   src={`img/${index === 0 ? 'beautyshop.jpeg' : index === 1 ? 'computer.jpg' : 'cgpacalculator.jpg'}`}
                   alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg shadow-lg"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
               
@@ -100,14 +103,19 @@ const Projects: React.FC = () => {
                 <h4 className="text-white font-medium mb-2 text-sm">Technologies Used:</h4>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, idx) => (
-                    <span key={idx} className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded-full text-xs">
+                    <span
+                      key={idx}
+                      className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded-full text-xs"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
               </div>
               
-              <div className="flex gap-2 mt-auto">
+              <div
+                className="flex flex-col sm:flex-row gap-2 mt-auto"
+              >
                 <a 
                   href={project.viewCode}
                   target="_blank"

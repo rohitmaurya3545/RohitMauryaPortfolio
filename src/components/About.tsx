@@ -3,7 +3,10 @@ import { MapPin, Calendar, Award } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
+    <section
+      id="about"
+      className="py-14 sm:py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
@@ -68,7 +71,10 @@ const About: React.FC = () => {
               <h3 className="text-xl font-bold text-white mb-4">Interests</h3>
               <div className="flex flex-wrap gap-2">
                 {['Open Source', 'Problem Solving', 'Tech Blogging', 'Cricket'].map((interest) => (
-                  <span key={interest} className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">
+                  <span
+                    key={interest}
+                    className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm"
+                  >
                     {interest}
                   </span>
                 ))}
@@ -80,12 +86,14 @@ const About: React.FC = () => {
             <img 
               src="img/laptop.jpg" 
               alt="Rohit at work" 
-              className="w-full max-w-md h-96 object-cover rounded-2xl shadow-2xl"
+              className="w-full max-w-md h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-2xl"
             />
           </div>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-4 gap-8 text-center">
+        <div
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center"
+        >
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
             <div className="text-3xl font-bold text-blue-400 mb-2">7</div>
             <div className="text-gray-300">Projects</div>

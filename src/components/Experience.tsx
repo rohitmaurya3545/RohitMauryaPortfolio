@@ -3,19 +3,22 @@ import { GraduationCap, Award, Star } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
+    <section
+      id="experience"
+      className="py-14 sm:py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Education & Experience</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             My academic journey and professional development milestones
           </p>
         </div>
 
-        <div className="space-y-8">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700">
-            <div className="flex items-start gap-6">
-              <div className="bg-blue-600 rounded-full p-3">
+        <div className="space-y-6 sm:space-y-8">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-slate-700">
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <div className="bg-blue-600 rounded-full p-3 shrink-0">
                 <GraduationCap className="text-white" size={24} />
               </div>
               <div className="flex-1">
@@ -37,20 +40,20 @@ const Experience: React.FC = () => {
                 <div>
                   <h4 className="text-white font-medium mb-2">Key Achievements:</h4>
                   <ul className="text-gray-300 space-y-2">
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-blue-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-blue-400 mt-1" />
                       Specialized in Java programming and software engineering
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-blue-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-blue-400 mt-1" />
                       Completed advanced courses in Data Structures & Algorithms
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-blue-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-blue-400 mt-1" />
                       Worked on multiple full-stack development projects
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-blue-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-blue-400 mt-1" />
                       Active participant in coding competitions and hackathons
                     </li>
                   </ul>
@@ -59,9 +62,9 @@ const Experience: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700">
-            <div className="flex items-start gap-6">
-              <div className="bg-green-600 rounded-full p-3">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-slate-700">
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <div className="bg-green-600 rounded-full p-3 shrink-0">
                 <GraduationCap className="text-white" size={24} />
               </div>
               <div className="flex-1">
@@ -83,20 +86,20 @@ const Experience: React.FC = () => {
                 <div>
                   <h4 className="text-white font-medium mb-2">Key Achievements:</h4>
                   <ul className="text-gray-300 space-y-2">
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-green-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-green-400 mt-1" />
                       Achieved excellent grades in Mathematics and Physics
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-green-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-green-400 mt-1" />
                       Developed strong analytical and logical thinking skills
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-green-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-green-400 mt-1" />
                       Participated in science exhibitions and competitions
                     </li>
-                    <li className="flex items-center gap-2">
-                      <Star size={16} className="text-green-400" />
+                    <li className="flex items-start gap-2">
+                      <Star size={16} className="text-green-400 mt-1" />
                       Built foundation for engineering studies
                     </li>
                   </ul>
@@ -105,11 +108,11 @@ const Experience: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-slate-700">
             <h3 className="text-2xl font-bold text-white mb-6">Certifications & Achievements</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="flex items-start gap-4">
-                <div className="bg-orange-600 rounded-full p-2">
+                <div className="bg-orange-600 rounded-full p-2 shrink-0">
                   <Award className="text-white" size={20} />
                 </div>
                 <div>
@@ -119,7 +122,7 @@ const Experience: React.FC = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="bg-purple-600 rounded-full p-2">
+                <div className="bg-purple-600 rounded-full p-2 shrink-0">
                   <Award className="text-white" size={20} />
                 </div>
                 <div>
@@ -129,6 +132,7 @@ const Experience: React.FC = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
